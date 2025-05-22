@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+}
+
+.login-container img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group button {
+    margin-right: 10px;
+}
+
+.alternative-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.social-buttons button.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-buttons button.google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.social-buttons button.twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+}
+
+.logo{
+    width: 120px;
+    margin-left: 92%;
+}
+
+.iniciar{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.iniciar:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+
+
+
+/*Código Original:
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group button {
+    margin-right: 10px;
+}
+
+.alternative-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.social-buttons button.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-buttons button.google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.social-buttons button.twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+}
+
+.logo{
+    width: 120px;
+    margin-left: 92%;
+}
+
+
+*/
