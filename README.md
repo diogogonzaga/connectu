@@ -36,5 +36,3 @@ O site possui um design moderno e aplativo, contendo animações aplativas reali
 
 
 ## 📄 Direitos Autorais
-
-© 2025 Bazar do Brigadeiro — Todos os direitos reservados.
