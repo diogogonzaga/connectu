@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConnectU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">CONNECTU</div>
+    <div class="auth">
+      <a href="index.html">Voltar</a>
+      <a href="login.html">Login</a>
+      <a href="registo.html" class="register">Registar</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Conecta-te<br>de forma simples<br>e segura</h1>
+      <p>Fica perto de quem importa. Partilha momentos, conversa sem limites e conecta-te de verdade.</p>
+      <a href="registo.html">  <button>Criar conta grátis</button></a>
+     
+    </div>
+
+    <div class="hero-image">
+      <div class="phone">
+        <div class="chat">
+          <div class="bubble blue">Olá! 👋</div>
+          <div class="bubble gray">Já viste o ConnectU?</div>
+          <div class="bubble blue">Sim, é incrível 😄</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Por que usar o ConnectU?</h2>
+  <div class="features-grid">
+  <div class="feature" data-modal="modal1" data-title="Privacidade em primeiro lugar"
+       data-text="As tuas conversas são protegidas com encriptação de ponta a ponta. Só tu e quem escolhes podem ver o conteúdo.">
+    <span>🔒</span>
+    <p>Privacidade em primeiro lugar</p>
+  </div>
+
+  <div class="feature" data-modal="modal2" data-title="Mensagens rápidas e seguras"
+       data-text="Envia mensagens instantaneamente, sem atrasos e com máxima segurança.">
+    <span>⚡</span>
+    <p>Mensagens rápidas e seguras</p>
+  </div>
+
+  <div class="feature" data-modal="modal3" data-title="Vídeos e fotos sem compressão"
+       data-text="Partilha fotos e vídeos na qualidade original, sem perda de detalhe.<br>">
+    <span>📸</span>
+    <p>Vídeos e fotos sem compressão</p>
+  </div>
+
+  <div class="feature" data-modal="modal4" data-title="Conecta pessoas, não algoritmos"
+       data-text="Aqui as conexões são humanas. Nada de feeds manipulados por algoritmos." id="modal">
+    <span>🌍</span>
+    <p>Conecta pessoas, não algoritmos</p>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    © 2025 ConnectU — Rede social fictícia
+  </footer>
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Privacidade em primeiro lugar</h2>
+    <p>As tuas conversas são protegidas com encriptação de ponta a ponta.</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Mensagens rápidas e seguras</h2>
+    <p>Comunicação instantânea com máxima segurança.</p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Vídeos e fotos sem compressão</h2>
+    <p>Partilha conteúdos na qualidade original.</p>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Conecta pessoas, não algoritmos</h2>
+    <p>Conexões reais, sem feeds manipulados.</p>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.feature').forEach(feature => {
+    feature.addEventListener('click', () => {
+      const modalId = feature.getAttribute('data-modal');
+      document.getElementById(modalId).style.display = 'flex';
+    });
+  });
+
+  document.querySelectorAll('.close').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal').style.display = 'none';
+    });
+  });
+
+  document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

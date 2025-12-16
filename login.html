@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConnectU - Iniciar Sessão</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <a href="index.html">
+    <img src="images/connectU_logo.png" alt="Logo ConnectU" class="logo" />
+  </a>
+
+  <div class="login-wrapper">
+    <div class="login-container">
+      <h2>Iniciar Sessão</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="pass">Palavra-passe:</label>
+          <input type="password" id="pass" name="pass" required />
+        </div>
+
+        <div class="form-group forgot">
+          <a href="#">Esqueceste-te da palavra-passe?</a>
+        </div>
+
+        <input type="submit" class="iniciar" value="Login" />
+      </form>
+
+      <div class="alternative-login">
+        <p>Ou inicia sessão com uma rede social parceira:</p>
+        <div class="social-buttons">
+          <button class="facebook">Facebook</button>
+          <button class="google">Google</button>
+          <button class="twitter">Twitter</button>
+        </div>
+      </div>
+
+      <div class="register-link">
+        <p>Ainda não tens uma conta? <a href="registo.html">Regista-te agora!</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
