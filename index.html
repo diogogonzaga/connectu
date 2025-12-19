@@ -10,24 +10,24 @@
 </head>
 <body>
 
-  <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-  <a class="logo" >CONNECTU</a>
+<header>
+  <div class="logo">CONNECTU</div>
 
-  <div class="ms-auto d-flex align-items-center gap-3">
-    
-   <a href="about.html" class="nav-link text-light" aria-label="Iniciar sessão">Sobre</a>
-   <a href="login.html" class="nav-link text-light" aria-label="Iniciar sessão">Login</a>
-<a href="registo.html"
-   class="btn btn-primary btn-sm"
-   aria-label="Criar nova conta">
-  Registar
-</a>
-
+  <!-- Botão hambúrguer -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-</nav>
 
-  </header>
+  <!-- Menu -->
+  <div class="auth" id="navMenu">
+    <a href="about.html">Sobre</a>
+    <a href="login.html">Login</a>
+    <a href="registo.html" class="register">Registar</a>
+  </div>
+</header>
+
 
   <main>
    <div data-aos="fade-down">
@@ -72,6 +72,22 @@
     easing: 'ease-in-out'
   });
 </script>
-<script src="script.js"></script>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  menuToggle.classList.toggle("active");
+});
+
+document.querySelectorAll('#navMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
+
+</script>
 </body>
 </html>
