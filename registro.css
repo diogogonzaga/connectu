@@ -151,6 +151,7 @@ input[type="file"] {
   border-radius: 10px;
   font-size: 15px;
   color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -175,6 +176,7 @@ input[type="file"] {
   border-radius: 10px;
   font-size: 15px;
   color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -214,3 +216,4 @@ a {
     grid-column: span 1;
   }
 }
+
