@@ -151,6 +151,7 @@ input[type="file"] {
   border-radius: 10px;
   font-size: 15px;
   color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -175,18 +176,18 @@ input[type="file"] {
   border-radius: 10px;
   font-size: 15px;
   color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6c757d; /* Cinza clássico de "voltar" */
+  background-color: #6c757d; 
   transition: opacity 0.3s;
 }
 
 .voltar:hover {
   opacity: 0.8;
 }
-
 
 /* =======================
    LINKS
