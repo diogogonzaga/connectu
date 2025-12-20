@@ -21,6 +21,7 @@ body {
   align-items: center;
   min-height: calc(100vh - 100px);
   padding: 20px;
+  margin-top: -3%;
 }
 
 .login-container {
@@ -70,6 +71,8 @@ input[type="file"] {
   text-align: center;
   margin-top: 5px;
   transition: background-color 0.3s ease;
+  /* teste */
+    /* teste */
 }
 
 .custom-file-upload:hover {
