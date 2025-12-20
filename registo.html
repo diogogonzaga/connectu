@@ -41,12 +41,18 @@
         </div>
 
         <div class="form-group">
-          <label for="foto_perfil" class="custom-file-upload">Selecionar Foto</label>
-          <input type="file" id="foto_perfil" name="foto_perfil" required>
+          <label for="date">Data de Nascimento:</label>
+          <input type="date" id="date" name="date" required>
         </div>
 
-        <input type="submit" class="iniciar" value="Acabar registo">
-        <a href="index.html"><button class="iniciar">Voltar</button></a>
+        <div class="form-group">
+          <label for="foto_perfil" class="custom-file-upload">Selecionar Foto</label>
+          <input type="file" id="foto_perfil" name="foto_perfil">
+        </div>
+
+<input type="submit" class="iniciar" value="Acabar registo">
+<button type="button" class="voltar" onclick="window.location.href='index.html'">Voltar</button>
+
       </form>
     </div>
   </div>

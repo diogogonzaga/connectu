@@ -1,150 +1,216 @@
+/* =======================
+   RESET
+======================= */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* =======================
+   BODY
+======================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
 }
 
+/* =======================
+   LOGO
+======================= */
 .logo {
   width: 120px;
-  margin: 20px auto;
   display: block;
+  margin: 25px auto 15px;
 }
 
+/* =======================
+   WRAPPER
+======================= */
 .registo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 100px);
   padding: 20px;
-  margin-top: -3%;
 }
 
+/* =======================
+   CONTAINER
+======================= */
 .login-container {
   width: 100%;
-  max-width: 400px;
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 40px 45px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
+/* =======================
+   TÍTULO
+======================= */
 .login-container h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 
+/* =======================
+   FORM (GRID)
+======================= */
+.login-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 30px;
+}
+
+/* =======================
+   FORM GROUP
+======================= */
 .form-group {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+/* =======================
+   LABEL
+======================= */
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
+  font-size: 14px;
   font-weight: bold;
+  margin-bottom: 6px;
+  min-height: 18px;
 }
 
+/* =======================
+   INPUTS
+======================= */
 input[type="text"],
+input[type="email"],
 input[type="password"],
-input[type="email"] {
-  width: 100%;
-  padding: 12px;
+input[type="date"] {
+  height: 44px;
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
 }
 
+input:focus {
+  outline: none;
+  border-color: #005cc5;
+}
+
+/* =======================
+   FILE INPUT
+======================= */
 input[type="file"] {
   display: none;
 }
 
+/* =======================
+   BOTÃO FOTO
+======================= */
 .custom-file-upload {
-  display: inline-block;
-  padding: 10px 20px;
+  grid-column: span 2;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #007bff;
-  color: white;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
   cursor: pointer;
-  text-align: center;
-  margin-top: 5px;
-  transition: background-color 0.3s ease;
-  /* teste */
-    /* teste */
+  transition: background-color 0.3s;
 }
 
 .custom-file-upload:hover {
   background-color: #0056b3;
 }
 
+/* =======================
+   CAMPOS EM LINHA INTEIRA
+======================= */
+.form-group:nth-child(5),
+.form-group:nth-child(6) {
+  grid-column: span 2;
+}
+
+/* =======================
+   BOTÕES
+======================= */
 .iniciar {
-  background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
-  width: 100%;
-  border: none;
-  padding: 15px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px;
+  grid-column: span 2;
+  height: 48px;
   margin-top: 10px;
-  transition: background 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 92, 197),
+    rgb(90, 20, 220)
+  );
+  transition: opacity 0.3s;
 }
 
 .iniciar:hover {
-  background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+  opacity: 0.9;
 }
 
-.alternative-login {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.social-buttons button {
-  margin: 5px;
-  padding: 10px 16px;
+.voltar {
+  grid-column: span 2;
+  height: 48px;
+  margin-top: 10px;
   border: none;
-  border-radius: 5px;
-  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #ffffff;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6c757d; /* Cinza clássico de "voltar" */
+  transition: opacity 0.3s;
 }
 
-.social-buttons .facebook {
-  background-color: #3b5998;
+.voltar:hover {
+  opacity: 0.8;
 }
 
-.social-buttons .google {
-  background-color: #db4437;
+
+/* =======================
+   LINKS
+======================= */
+a {
+  text-decoration: none;
 }
 
-.social-buttons .twitter {
-  background-color: #1da1f2;
-}
-
-/* Responsivo */
+/* =======================
+   RESPONSIVO
+======================= */
 @media (max-width: 768px) {
-  .logo {
-    width: 100px;
-    margin: 20px auto;
-  }
-
   .login-container {
     padding: 30px 20px;
   }
 
-  .social-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .login-container form {
+    grid-template-columns: 1fr;
   }
 
-  .social-buttons button {
-    width: 100%;
-  }
-
-  .custom-file-upload {
-    width: 100%;
-    text-align: center;
+  .custom-file-upload,
+  .iniciar,
+  .form-group:nth-child(5),
+  .form-group:nth-child(6) {
+    grid-column: span 1;
   }
 }
