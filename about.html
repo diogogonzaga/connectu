@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ConnectU</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS principal -->
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
@@ -12,14 +19,12 @@
 <header>
   <div class="logo">CONNECTU</div>
 
-  <!-- Botão hambúrguer -->
   <div class="menu-toggle" id="menuToggle">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- Menu de navegação -->
   <div class="auth" id="navMenu">
     <a href="index.html">Voltar</a>
     <a href="login.html">Login</a>
@@ -27,50 +32,52 @@
   </div>
 </header>
 
-
 <section class="hero">
-  <div class="hero-text">
+  <div class="hero-text" data-aos="fade-right">
     <h1>Conecta-te<br>de forma simples<br>e segura</h1>
     <p>Fica perto de quem importa. Partilha momentos, conversa sem limites e conecta-te de verdade.</p>
-    <a href="registo.html"><button>Criar conta grátis</button></a>
+    <a href="registo.html">
+      <button>Criar conta grátis</button>
+    </a>
   </div>
 
-  <div class="hero-image">
+  <div class="hero-image" data-aos="zoom-in-up">
     <div class="phone">
       <div class="chat">
         <div class="bubble blue">Olá! 👋</div>
         <div class="bubble gray">Já viste a ConnectU?</div>
-        <div class="bubble blue">Sim, é incrivel 😄</div>
+        <div class="bubble blue">Sim, é incrível 😄</div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="features">
-  <h2>Por que usar o ConnectU?</h2>
+  <h2 data-aos="fade-up">Por que usar o ConnectU?</h2>
+
   <div class="features-grid">
-    <div class="feature" data-modal="modal1">
+    <div class="feature" data-aos="fade-up" data-aos-delay="0" data-modal="modal1">
       <span>🔒</span>
       <p>Privacidade em primeiro lugar</p>
     </div>
-    <div class="feature" data-modal="modal2">
+
+    <div class="feature" data-aos="fade-up" data-aos-delay="100" data-modal="modal2">
       <span>⚡</span>
       <p>Mensagens rápidas e seguras</p>
     </div>
-    <div class="feature" data-modal="modal3">
+
+    <div class="feature" data-aos="fade-up" data-aos-delay="200" data-modal="modal3">
       <span>📸</span>
       <p>Vídeos e fotos sem compressão</p>
     </div>
-    <div class="feature" data-modal="modal4">
+
+    <div class="feature" data-aos="fade-up" data-aos-delay="300" data-modal="modal4">
       <span>🌍</span>
       <p>Conecta pessoas, não algoritmos</p>
     </div>
   </div>
 </section>
 
-<footer>
-  © 2025 ConnectU — Rede social fictícia
-</footer>
 
 <!-- MODAIS -->
 <div id="modal1" class="modal">
@@ -105,6 +112,25 @@
   </div>
 </div>
 
+<footer>
+  © 2025 ConnectU — Rede social fictícia
+</footer>
+
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Inicialização do AOS -->
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
+
+<!-- JS principal -->
 <script src="about.js"></script>
+
 </body>
 </html>
