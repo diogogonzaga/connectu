@@ -284,7 +284,7 @@ footer {
   width: 15px;
   height: 34px;
   border-radius: 50%;
-  background: #f1f5f9;
+  background: #fff;
   display: grid;
   place-items: center;
   font-size: 25px;
@@ -293,7 +293,7 @@ footer {
 }
 
 .close:hover {
-  background: #e2e8f0;
+  background: #fff;
   transform: rotate(90deg);
 }
 
