@@ -11,6 +11,13 @@ body {
   background-color: #fff;
 }
 
+.logoo {
+  display: block;
+  margin: 40px auto;
+  width: 90px;
+  margin-top: -30px;
+}
+
 /* ===================== HEADER ===================== */
 header {
   display: flex;
