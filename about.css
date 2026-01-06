@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+ font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   color: #111;
   background-color: #fff;
 }
@@ -20,21 +20,23 @@ body {
 
 /* ===================== HEADER ===================== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background: #1f1f1f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #23232e;
   color: #fff;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  z-index: 1000;
 }
 
-header .logo {
-    color: #fff;
-  font-size: 24px;
-  text-transform: uppercase;
+.logo {
+  font-size: 22px;
   letter-spacing: 2px;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .auth a {
@@ -42,6 +44,7 @@ header .logo {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .auth .register {
@@ -55,6 +58,9 @@ header .logo {
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: bold;
+}
+.auth a:hover {
+  color: #4f46e5;
 }
 
 /* ===================== HAMBURGUER ===================== */
