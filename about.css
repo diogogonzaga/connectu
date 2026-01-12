@@ -237,11 +237,20 @@ header {
 }
 /* ===================== FOOTER ===================== */
 footer {
-  padding: 40px 60px;
-  background: #f3f4f6;
+  background: #23232e;
+  color: #aaa;
   text-align: center;
+  padding: 24px 16px;
   font-size: 14px;
-  color: #555;
+}
+
+footer a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* ===================== MODAL BASE ===================== */
