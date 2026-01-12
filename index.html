@@ -60,12 +60,14 @@
 
   <footer>
     &copy; 2025 ConnectU - Todos os direitos reservados | 
-    <a href="#">Termos</a> | 
-    <a href="#">Privacidade</a>
+  <a href="#" onclick="Termos()">Termos</a> | 
+  <a href="#" onclick="Privacidade()">Privacidade</a> 
   </footer>
 
   <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
   AOS.init({
     duration: 800,
@@ -88,6 +90,154 @@ document.querySelectorAll('#navMenu a').forEach(link => {
   });
 });
 
+function helpBtn() {
+  Swal.fire({
+    title: 'Precisas de ajuda?',
+    icon: 'info',
+html: `
+  <div class="swal-help">
+    <p class="swal-help-text">
+      Como podemos ajudar?
+    </p>
+
+    <div class="swal-help-options">
+      <a href="mailto:lojabazardobrigadeiro@gmail.com" class="swal-help-card">
+        <div class="swal-help-icon">📧</div>
+        <h4>Suporte por Email</h4>
+        <p>Entra em contacto com a nossa equipa</p>
+      </a>
+
+      <div class="swal-help-card disabled">
+        <div class="swal-help-icon">💬</div>
+        <h4>Chat Online</h4>
+        <p>Disponível em breve</p>
+      </div>
+    </div>
+  </div>
+`,
+
+    confirmButtonText: 'Fechar',
+    confirmButtonColor: '#0d6efd',
+    width: 520,
+    customClass: {
+      popup: 'swal-help-popup',
+      icon: 'swal-help-icon'
+    }
+  });
+}
+
+        
+
+
+     function Termos() {
+Swal.fire({
+  title: 'Termos e Condições de Uso',
+  html: `
+    <div style="text-align:left; max-height:300px; overflow-y:auto; font-size:14px;">
+      <p><strong>Última atualização:</strong> 27 de dezembro de 2025</p>
+
+      <p>Bem-vindo(a) à <strong>Conexia</strong>, uma rede social fictícia criada para fins ilustrativos.
+      Ao aceder ou utilizar a plataforma, concorda integralmente com os presentes Termos e Condições.</p>
+
+      <h4>1. Definições</h4>
+      <p><strong>Plataforma:</strong> aplicação e serviços da Conexia.<br>
+      <strong>Utilizador:</strong> qualquer pessoa que utilize a plataforma.<br>
+      <strong>Conteúdo:</strong> textos, imagens, vídeos e outros materiais publicados.</p>
+
+      <h4>2. Uso da Plataforma</h4>
+      <ul>
+        <li>Utilização lícita, ética e respeitosa;</li>
+        <li>Proibição de conteúdo ilegal, ofensivo ou enganoso;</li>
+        <li>Proibição de spam, malware ou abuso da plataforma.</li>
+      </ul>
+
+      <h4>3. Conteúdo do Utilizador</h4>
+      <p>O utilizador mantém os direitos sobre o conteúdo publicado, concedendo à plataforma
+      uma licença para exibição e funcionamento do serviço.</p>
+
+      <h4>4. Responsabilidade</h4>
+      <p>A plataforma é fornecida “tal como está”, sem garantias.</p>
+
+      <p><em>Este documento é totalmente fictício e destina-se apenas a fins demonstrativos.</em></p>
+    </div>
+  `,
+  icon: 'info',
+  confirmButtonText: 'Aceito',
+  confirmButtonColor: '#3085d6',
+  showCancelButton: true,
+  cancelButtonText: 'Não aceito',
+  cancelButtonColor: '#d33',
+  width: 700
+}).then((result) => {
+  if (result.isConfirmed) {
+    console.log('Termos aceites');
+  } else {
+    console.log('Termos não aceites');
+  }
+});
+}
+
+
+
+
+    function Privacidade() {
+Swal.fire({
+  title: 'Política de Privacidade',
+  html: `
+    <div style="text-align:left; max-height:300px; overflow-y:auto; font-size:14px;">
+      <p><strong>Última atualização:</strong> 27 de dezembro de 2025</p>
+
+      <p>A presente Política de Privacidade descreve, de forma fictícia e ilustrativa,
+      como a <strong>Conexia</strong> recolhe, utiliza e protege os dados dos seus utilizadores.</p>
+
+      <h4>1. Dados Recolhidos</h4>
+      <ul>
+        <li>Dados de identificação (nome, email, username);</li>
+        <li>Conteúdo publicado na plataforma;</li>
+        <li>Dados técnicos (dispositivo, navegador, IP).</li>
+      </ul>
+
+      <h4>2. Finalidade do Tratamento</h4>
+      <p>Os dados são utilizados para:</p>
+      <ul>
+        <li>Funcionamento e melhoria da plataforma;</li>
+        <li>Personalização da experiência do utilizador;</li>
+        <li>Comunicações internas e notificações.</li>
+      </ul>
+
+      <h4>3. Partilha de Dados</h4>
+      <p>Os dados não são vendidos e apenas podem ser partilhados quando necessário
+      para o funcionamento do serviço ou por obrigação legal fictícia.</p>
+
+      <h4>4. Segurança</h4>
+      <p>São aplicadas medidas técnicas e organizativas adequadas para proteger os dados,
+      sem garantias absolutas, dada a natureza ilustrativa do serviço.</p>
+
+      <h4>5. Direitos do Utilizador</h4>
+      <p>O utilizador pode solicitar acesso, correção ou eliminação dos seus dados
+      (de forma meramente demonstrativa).</p>
+
+      <p><em>Esta política é totalmente fictícia e destina-se apenas a fins educacionais.</em></p>
+    </div>
+  `,
+  icon: 'shield',
+  confirmButtonText: 'Compreendo e aceito',
+  confirmButtonColor: '#3085d6',
+  showCancelButton: true,
+  cancelButtonText: 'Cancelar',
+  cancelButtonColor: '#d33',
+  width: 700
+}).then((result) => {
+  if (result.isConfirmed) {
+    console.log('Política de Privacidade aceite');
+  } else {
+    console.log('Política de Privacidade não aceite');
+  }
+});
+}
+
+
 </script>
+<button id="helpBtn" class="helpBtn" onclick="helpBtn()">Ajuda</button>
 </body>
 </html>
