@@ -6,6 +6,9 @@
   <title>ConnectU - Registo</title>
   <link rel="stylesheet" href="registro.css">
   <link rel="shortcut icon" href="../images/connectU_logo.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="account.js"></script>
 </head>
 <body>
   <a href="index.html">
@@ -51,8 +54,9 @@
           <input type="file" id="foto_perfil" name="foto_perfil">
         </div>
 
-<input type="submit" class="iniciar" value="Acabar registo">
-<button type="button" class="voltar" onclick="window.location.href='index.html'">Voltar</button>
+<input type="button" class="iniciar" value="Acabar registo" onclick="register(event)">
+<a href="login.html"><button type="button" class="voltar">Voltar</button></a>
+
 
       </form>
     </div>

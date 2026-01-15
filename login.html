@@ -6,6 +6,8 @@
   <title>ConnectU - Iniciar Sessão</title>
   <link rel="stylesheet" href="login.css" />
   <link rel="icon" href="images/connectU_logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="account.js"></script>
 </head>
 <body>
   <a href="index.html">
@@ -27,7 +29,8 @@
           <input type="password" id="pass" name="pass" required />
         </div>
 
-        <input type="submit" class="iniciar" value="Login" />
+<input type="button" class="iniciar" value="Login" onclick="login(event)">
+
         
       </form>
 <a href="index.html"><button class="voltar">Voltar</button></a>
