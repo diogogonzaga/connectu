@@ -170,24 +170,19 @@ input[type="file"] {
 
 .voltar {
   grid-column: span 2;
-  height: 48px;
-  margin-top: 10px;
+  height: 44px;
+  width: 60%;              /* 🔑 menor que o botão iniciar */
+  margin: 10px auto 0;     /* 🔑 centra horizontalmente */
   border: none;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #6c757d; 
-  transition: opacity 0.3s;
+  background-color: #6c757d;
+  display: block;
 }
 
-.voltar:hover {
-  opacity: 0.8;
-}
 
 /* =======================
    LINKS
