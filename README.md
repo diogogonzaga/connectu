@@ -5,11 +5,14 @@ A **Connectu** é um site de apresentação de uma rede social fictícia.
 O site possui um design moderno e aplativo, contendo animações aplativas realisadas com **AOS**
 
 ---
+## Link do Projeto
 
-
+https://diogogonzaga.github.io/connectu/
+---
 ## Funcionalidades
 
 - **Apresentação institucional** com logo e missão.
+- **Seção “Sobre”** com um design aplativo e moderno
 - **Seção “Login” e "Regsitar"** com design moderno e aplativo
 - **Publicidade** com imagens e frases aplativas.
 
